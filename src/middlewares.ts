@@ -7,6 +7,7 @@ export const localsMiddleware: Controller = (req, res, next) => {
 };
 
 export const notFound: Controller = (req, res) => {
+  req.flash("error", "mot");
   res.status(404);
-  res.render("404", { title: "404 Not found" });
+  res.render("404", { title: "Not Found" });
 };

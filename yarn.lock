@@ -22,6 +22,13 @@
     "@types/connect" "*"
     "@types/node" "*"
 
+"@types/connect-flash@*":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@types/connect-flash/-/connect-flash-0.0.34.tgz#ec7323d1636bc8d9b7c02c3a0a5d337602b671f9"
+  integrity sha512-QC93TwnTZ0sk//bfT81o7U4GOedbOZAcgvqi0v1vJqCESC8tqIVnhzB1CHiAUBUWFjoxG5JQF0TYaNa6DMb6Ig==
+  dependencies:
+    "@types/express" "*"
+
 "@types/connect@*":
   version "3.4.32"
   resolved "https://registry.yarnpkg.com/@types/connect/-/connect-3.4.32.tgz#aa0e9616b9435ccad02bc52b5b454ffc2c70ba28"
@@ -36,6 +43,14 @@
   dependencies:
     "@types/node" "*"
 
+"@types/express-flash@^0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@types/express-flash/-/express-flash-0.0.0.tgz#758f0dff051f58001c31f41815c435ed0ae90ec0"
+  integrity sha512-zs1xXRIZOjghUBriJPSnhPmfDpqf/EQxT21ggi/9XZ9/RHYrUi+5vK2jnQrP2pD1abbuZvm7owLICiNCLBQzEQ==
+  dependencies:
+    "@types/connect-flash" "*"
+    "@types/express" "*"
+
 "@types/express-serve-static-core@*":
   version "4.16.1"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.16.1.tgz#35df7b302299a4ab138a643617bd44078e74d44e"
@@ -44,7 +59,7 @@
     "@types/node" "*"
     "@types/range-parser" "*"
 
-"@types/express@^4.16.1":
+"@types/express@*", "@types/express@^4.16.1":
   version "4.16.1"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.16.1.tgz#d756bd1a85c34d87eaf44c888bad27ba8a4b7cf0"
   integrity sha512-V0clmJow23WeyblmACoxbHBu2JKlE5TiIme6Lem14FnPW9gsttyHtk6wq7njcdIWH1njAaFgR8gW09lgY98gQg==
