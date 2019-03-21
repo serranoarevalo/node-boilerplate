@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
-app.use(express.static(path.join(__dirname, "static")));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -28,7 +28,6 @@ app.use(
 );
 app.use(flash());
 app.use(localsMiddleware);
-
 app.use("/", globalRouter);
 app.use(notFound);
 

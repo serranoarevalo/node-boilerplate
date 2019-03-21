@@ -30,6 +30,10 @@
     "ts-node": "^8.0.2"
   },
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts"
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "prebuild": "rm -fr dist",
+    "build": "tsc && yarn copy",
+    "copy": "cp -R src/public/css dist/public/css && cp -R src/views dist/views && cp -R src/public/img dist/public/img",
+    "start": "node dist/index.js"
   }
 }
