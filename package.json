@@ -33,7 +33,10 @@
     "dev": "nodemon --exec ts-node src/index.ts",
     "prebuild": "rm -fr dist",
     "build": "tsc && yarn copy",
-    "copy": "cp -R src/public/css dist/public/css && cp -R src/views dist/views && cp -R src/public/img dist/public/img",
+    "copy:css": "cp -R src/public/css dist/public/css 2>/dev/null || :",
+    "copy:views": "cp -R src/views dist/views 2>/dev/null || :",
+    "copy:img": " cp -R src/public/img dist/public/img 2>/dev/null || :",
+    "copy": "yarn copy:css && yarn copy:views && yarn copy:img",
     "start": "node dist/index.js"
   }
 }
